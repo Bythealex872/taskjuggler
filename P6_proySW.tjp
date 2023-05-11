@@ -101,7 +101,7 @@ task WMGame "Web & Mobile Game" {
     # It is necessary to “purge” the “chargeset” because it has been assigned previously to other variable 
     purge chargeset
     chargeset back
-    responsible dev1
+    responsible dev1,dev4
     depends WMGame.tgdesign
     task tBEd "Back End General Design" {
       # The effort to finish this task is 5 man-days.
