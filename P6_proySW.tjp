@@ -46,7 +46,7 @@ account cost "Project Cost" {
   account manag "Management"
   account wFront "Web Front-End"
   account back "Back-End"
-  account deply "Deployment"
+  account deploy "Deployment"
   account mFront "Movil Front-End"
 }
 account rev "Payments"
@@ -210,7 +210,7 @@ task WMGame "Web & Mobile Game" {
     }
   }
   task cloud "Cloud Support" {
-    chargeset back
+    chargeset deploy
     responsible dev1,dev2
     depends WMGame.tgdesign
     task cloudprovider "Cloud Providers evaluation" {
