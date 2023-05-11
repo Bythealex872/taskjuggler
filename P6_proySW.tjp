@@ -199,12 +199,12 @@ task WMGame "Web & Mobile Game" {
       allocate dev1
     }
     task tmobFimp "Mobile Front End Implementation" {
-      effort 18d
+      effort 5d
       allocate dev1, dev2
       depends WMGame.tmobF.tmobFdes
     }
     task tmobFtest "Mobile Front End Testing" {
-      effort 5d
+      effort 3d
       allocate dev1, dev2
       depends WMGame.tmobF.tmobFimp
     }
@@ -220,7 +220,7 @@ task WMGame "Web & Mobile Game" {
 
     }
     task clouddeploy "Deployment" {
-      effort 18d
+      effort 2d
       allocate dev1, dev2
       depends  WMGame.cloud.cloudprovider
     }
