@@ -188,7 +188,6 @@ task WMGame "Web & Mobile Game" {
   }
 
   task tmobF "Mobile Front End" {
-    chargeset wFront
     responsible dev1,dev2
     depends WMGame.tgdesign
     task tmobFdes "Mobile Front End Design" {
