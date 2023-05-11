@@ -186,6 +186,43 @@ task WMGame "Web & Mobile Game" {
       charge 12000.0 onstart
     }
   }
+
+  task tmobF "Mobile Front End" {
+    chargeset wFront
+    responsible dev1,dev2
+    depends WMGame.tgdesign
+    task tmobFdes "Mobile Front End Design" {
+      effort 3d
+      allocate dev1
+    }
+    task tmobFimp "Mobile Front End Implementation" {
+      effort 18d
+      allocate dev1, dev2
+      depends tmobFdes
+    }
+    task tmobFtest "Mobile Front End Testing" {
+      effort 5d
+      allocate dev1, dev2
+      depends tmobFimp
+    }
+  }
+  task tmobF "Cloud Support" {
+    chargeset back
+    responsible dev1,dev2
+    depends WMGame.tgdesign
+    task tmobFdes "Cloud Providers evaluation" {
+      effort 3d
+      allocate dev1
+    }
+    task tmobFimp "Deployment" {
+      effort 18d
+      allocate dev1, dev2
+      depends tmobFdes
+    }
+
+  }
+
+  
 }
 
 # Now the project has been specified completely. Stopping here would
