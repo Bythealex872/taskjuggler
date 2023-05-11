@@ -201,12 +201,12 @@ task WMGame "Web & Mobile Game" {
     task tmobFimp "Mobile Front End Implementation" {
       effort 18d
       allocate dev1, dev2
-      depends tmobFdes
+      depends WMGame.tgdesign.tmobF.tmobFdes
     }
     task tmobFtest "Mobile Front End Testing" {
       effort 5d
       allocate dev1, dev2
-      depends tmobFimp
+      depends WMGame.tgdesign.tmobF.tmobFimp
     }
   }
   task cloud "Cloud Support" {
