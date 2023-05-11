@@ -221,7 +221,7 @@ task WMGame "Web & Mobile Game" {
     task clouddeploy "Deployment" {
       effort 18d
       allocate dev1, dev2
-      depends tmobFdes
+      depends cloudprovider
     }
 
   }
