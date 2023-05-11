@@ -222,7 +222,7 @@ task WMGame "Web & Mobile Game" {
     task clouddeploy "Deployment" {
       effort 18d
       allocate dev1, dev2
-      depends  WMGame.tgdesign.cloudprovider
+      depends  WMGame.cloud.cloudprovider
     }
 
   }
