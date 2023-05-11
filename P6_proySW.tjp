@@ -106,7 +106,7 @@ task WMGame "Web & Mobile Game" {
     task tBEd "Back End General Design" {
       # The effort to finish this task is 5 man-days.
       effort 5d
-      allocate dev1
+      allocate dev1,dev4
     }
     task tlogic "Game logic" {
       effort 12d
